@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>dibujando con el mouse</title>
+    <style type="text/css">
+
+     BODY
+     {
+         background-color: #eff7e1;
+
+     }
+
+     canvas
+     {
+       background-color: black;
+     }
+
+
+       .botonReset{
+         text-decoration: none;
+         padding: 3px;
+         padding-left: 10px;
+         padding-right: 10px;
+         font-family: arial;
+         font-weight: 600;
+         font-size: 25px;
+         font-style: italic;
+         color: black;
+         background-color: #ffffff;
+         border-radius: 15px;
+         border: 3px double #006505;
+       }
+.botonReset:hover{
+ opacity: 0.6;
+ text-decoration: none;
+}
+
+}
+ </style>
+  </head>
+  <body>
+<font color="black" face="Comic Sans MS,arial">
+<h1 align="center"><strong> DIBUJA CON EL MOUSE EN EL LIENZO </strong></h1>
+<p align="center"> Escoje el color del lienzo <input type="color" id="colorLienzo"/></p>
+ <p align="center"> Escoje el color<input type="color" id="colorcito"/></p>
+ <p align="center"> Elige el grosor de la linea <input type="range" name="rango"  min="1" max="9" id="grosorcito" ></p>
+</font>
+
+ <div style="text-align: center">
+<canvas width = "800" height="500" id= "area_de_dibujo"aling="center"></canvas>
+ </div>
+
+<div style="text-align: center">
+<input  type="reset" value="LIMPIAR EL LIENZO" class="botonReset" id = "botonReset">
+</div>
+
+
+</style>
+
+
+
+<script src="mouse.js"> </script>
+</html>
